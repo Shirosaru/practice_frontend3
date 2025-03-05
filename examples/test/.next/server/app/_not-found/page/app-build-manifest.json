@@ -1,0 +1,24 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/[project]__2f4f92._.js",
+      "static/chunks/app_icon_png_mjs_db4d5a._.js",
+      "static/chunks/[root of the server]__a2c23d._.css",
+      "static/chunks/f0296_next_14522f._.js",
+      "static/chunks/7fdbc_@wagmi_core_dist_esm_7ff042._.js",
+      "static/chunks/7a0fb_viem__esm_d86cbe._.js",
+      "static/chunks/08b5e__pnpm_122316._.js",
+      "static/chunks/[project]_examples_test_0aaf20._.js",
+      "static/chunks/722cc_@metamask_sdk_dist_browser_es_metamask-sdk_803750.js",
+      "static/chunks/app_layout_tsx_53c0bf._.js",
+      "static/chunks/f0296_next_dist_compiled_react-dom_1ac1d3._.js",
+      "static/chunks/f0296_next_dist_compiled_80c993._.js",
+      "static/chunks/f0296_next_dist_client_1dc9b9._.js",
+      "static/chunks/f0296_next_dist_3aaf3f._.js",
+      "static/chunks/eae63_@swc_helpers_cjs_e27e0a._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_cefbba._.js",
+      "static/chunks/[project]_examples_test_e69f0d._.js",
+      "static/chunks/[project]_examples_test_8fd258._.js"
+    ]
+  }
+}
