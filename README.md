@@ -3,11 +3,19 @@
 setting up servers for practical everyday bread and butter tasks
 
 '''
-pnpm install
+cd examples
+pnpm install 
 pnpm dev
 '''
 
+to get python flask server running simply
+'''
+python path_to_backend.py
+'''
+
+
 under construction
+
 
 This monorepo contains various example applications demonstrating the integration of MetaMask SDK across different frameworks and platforms. Built with Turborepo for efficient development and build processes.
 
