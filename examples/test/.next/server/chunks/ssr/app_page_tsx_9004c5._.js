@@ -14,15 +14,47 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 ;
 function Home() {
-    const [inputString, setInputString] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
+    const [inputString, setInputString] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(""); // Original string input
+    const [proteinSequence, setProteinSequence] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(""); // Protein sequence input
     const [outputString, setOutputString] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    const [fileUrl, setFileUrl] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // State to store the file URL for download
-    const [processedData, setProcessedData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // State to store processed data
-    // Handle input change
+    const [fileUrl, setFileUrl] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // File URL for download
+    const [processedData, setProcessedData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // Processed data from backend
+    const [vhvlSequence, setVhvlSequence] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // VHVL sequence
+    const [remainingSequence, setRemainingSequence] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null); // Remaining sequence
+    // Handle changes in the original string input
     const handleInputChange = (e)=>{
         setInputString(e.target.value);
     };
-    // Handle form submission to call Flask backend
+    // Handle changes in the protein sequence input
+    const handleProteinSequenceChange = (e)=>{
+        setProteinSequence(e.target.value);
+    };
+    // Handle form submission to call Flask backend for protein sequence processing
+    const handleProteinSubmit = async ()=>{
+        try {
+            const response = await fetch("http://localhost:5000/get_vhvl", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    protein_sequence: proteinSequence
+                })
+            });
+            if (response.ok) {
+                const data = await response.json();
+                setVhvlSequence(data.vhvl); // Set the VHVL sequence
+                setRemainingSequence(data.remaining); // Set the remaining sequence
+            } else {
+                const errorData = await response.json();
+                setOutputString(`Error: ${errorData.error || "Unknown error"}`);
+            }
+        } catch (error) {
+            console.error("Error during fetch:", error);
+            setOutputString("An error occurred while processing your request.");
+        }
+    };
+    // Handle form submission for the original string
     const handleSubmit = async ()=>{
         try {
             const response = await fetch("http://localhost:5000/execute", {
@@ -36,15 +68,11 @@ function Home() {
             });
             if (response.ok) {
                 const data = await response.json();
-                // If the response contains a file path and processed data
                 if (data.file_path) {
-                    // Display processed data
                     setProcessedData(data.processed_data);
-                    // If the response is an Excel file (not JSON)
                     const blob = await fetch(data.file_path).then((res)=>res.blob());
                     const downloadUrl = URL.createObjectURL(blob);
-                    setFileUrl(downloadUrl); // Store the URL for file download
-                    // Optionally: Show the user a success message or file URL
+                    setFileUrl(downloadUrl); // Set the file URL for download
                     setOutputString("File is ready for download.");
                 }
             } else {
@@ -72,7 +100,7 @@ function Home() {
                                     children: "Enter a String:"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -83,7 +111,7 @@ function Home() {
                                     placeholder: "Type a string"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 89,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -92,13 +120,50 @@ function Home() {
                                     children: "Submit"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 96,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/examples/test/app/page.tsx",
-                            lineNumber: 59,
+                            lineNumber: 87,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-full max-w-md p-6 bg-gray-800 rounded-lg text-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-2xl mb-4",
+                                    children: "Enter Protein Sequence:"
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 106,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "text",
+                                    value: proteinSequence,
+                                    onChange: handleProteinSequenceChange,
+                                    className: "p-3 rounded-lg w-full mb-4 text-black",
+                                    placeholder: "Enter protein sequence"
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: handleProteinSubmit,
+                                    className: "bg-green-500 p-3 rounded-xl text-white hover:bg-green-600 transition",
+                                    children: "Get VHVL and Remaining"
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 114,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/examples/test/app/page.tsx",
+                            lineNumber: 105,
                             columnNumber: 13
                         }, this),
                         outputString && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -109,20 +174,68 @@ function Home() {
                                     children: "Processed String:"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 125,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: outputString
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 126,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/examples/test/app/page.tsx",
-                            lineNumber: 78,
+                            lineNumber: 124,
+                            columnNumber: 15
+                        }, this),
+                        vhvlSequence && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-4 p-6 bg-gray-700 rounded-lg text-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-lg",
+                                    children: "VHVL Sequence:"
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 133,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: vhvlSequence
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 134,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/examples/test/app/page.tsx",
+                            lineNumber: 132,
+                            columnNumber: 15
+                        }, this),
+                        remainingSequence && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-4 p-6 bg-gray-700 rounded-lg text-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-lg",
+                                    children: "Remaining Sequence:"
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 139,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: remainingSequence
+                                }, void 0, false, {
+                                    fileName: "[project]/examples/test/app/page.tsx",
+                                    lineNumber: 140,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/examples/test/app/page.tsx",
+                            lineNumber: 138,
                             columnNumber: 15
                         }, this),
                         fileUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -133,7 +246,7 @@ function Home() {
                                     children: "Download Translated File:"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 87,
+                                    lineNumber: 147,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -143,13 +256,13 @@ function Home() {
                                     children: "Click here to download the file"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 148,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/examples/test/app/page.tsx",
-                            lineNumber: 86,
+                            lineNumber: 146,
                             columnNumber: 15
                         }, this),
                         processedData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -160,42 +273,42 @@ function Home() {
                                     children: "Processed Data:"
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 161,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$0_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("pre", {
                                     children: JSON.stringify(processedData, null, 2)
                                 }, void 0, false, {
                                     fileName: "[project]/examples/test/app/page.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 162,
                                     columnNumber: 17
                                 }, this),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "[project]/examples/test/app/page.tsx",
-                            lineNumber: 100,
+                            lineNumber: 160,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/examples/test/app/page.tsx",
-                    lineNumber: 57,
+                    lineNumber: 85,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/examples/test/app/page.tsx",
-                lineNumber: 56,
+                lineNumber: 84,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/examples/test/app/page.tsx",
-            lineNumber: 55,
+            lineNumber: 83,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/examples/test/app/page.tsx",
-        lineNumber: 54,
+        lineNumber: 82,
         columnNumber: 5
     }, this);
 }

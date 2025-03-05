@@ -3,6 +3,7 @@ from flask_cors import CORS
 import pandas as pd
 from Bio.Seq import Seq
 import os
+import getVHVL
 
 # Folder to store the generated files
 UPLOAD_FOLDER = './backend/uploads'
@@ -64,6 +65,21 @@ def execute():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 400
+
+@app.route('/get_vhvl', methods=['POST'])
+def get_vhvl():
+    data = request.get_json()
+    protein_sequence = data.get('protein_sequence', '')
+
+    # Get the VHVL sequence and the remaining part
+    vhvl, remaining = getVHVL.getVHVL(protein_sequence)
+
+    return jsonify({
+        'vhvl': vhvl,
+        'remaining': remaining
+    })
+
+
 
 # Run the Flask app
 if __name__ == "__main__":
