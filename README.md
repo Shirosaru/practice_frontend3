@@ -2,10 +2,17 @@
 
 setting up servers for practical everyday bread and butter tasks
 
+Requirements install anarci
+'''
+conda install bioconda::anarci
+'''
+
 '''
 cd examples
 pnpm install 
 pnpm dev
+
+python examples/backend/backend.py
 '''
 
 to get python flask server running simply
